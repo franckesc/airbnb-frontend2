@@ -8,6 +8,8 @@ import { Routes, Route } from "react-router-dom";
 import DetalleAlojamiento from "./components/Detalle/DetalleAlojamiento";
 import Login from "./pages/Login";
 import Registro from "./pages/Registro";
+import Perfil from "./pages/Perfil";
+import Valoracion from "./pages/Valoracion";
 
 const BASE_URL = "http://localhost:3000";
 
@@ -132,6 +134,8 @@ function App() {
         <Route path="/alojamiento/:id" element={<DetalleAlojamiento />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Registro />} />
+        <Route path="/perfil" element={<Perfil />} />
+        <Route path="/valoracion/:idReserva" element={<Valoracion />} />
       </Routes>
 
       <Footerbar />
